@@ -4,14 +4,13 @@ class Pizza
     @pizzaPrice #price for the pizza you ordered
     @pizzaSauce = "Tomato"
     @pizzaBase = "Crust"
-    @totalPrice = 0
 
     def initialize (name,pizzaPrice)
         @name = name
         @pizzaPrice = pizzaPrice
     end
 
-    def calculateTotalPrice ()
+    def calculateTotalPrice
         totalPrice = @pizzaPrice
         toppingPrice = 0
         for topping in @toppings do
@@ -26,7 +25,6 @@ class Pizza
     attr_accessor :pizzaBase
     attr_reader :name
     attr_reader :pizzaPrice
-
 end
 
 

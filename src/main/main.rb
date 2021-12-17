@@ -37,6 +37,8 @@ when "SEAFOOD"
     pizza = Pizza.new("Seafood", 20)
 else
     puts "invalid pizza name." # not gonna be use,  just default 
+
+    # Xinyi note: place you can do error handling
 end
 
 # Add toppings screen
@@ -63,8 +65,6 @@ def addToppings (toppingsHashForThisMethod, toppings)
         topping = Topping.new(toppingNameKey, toppingPropertyValue["price"], toppingQuantity.to_i)
         toppings << topping     
     end
-    puts "toppings array in addToppings method"
-    puts toppings
 end
 
 toppings = []
@@ -79,7 +79,7 @@ pizza.toppings = toppings
 # Add pizza sauce screen
 puts "What pizza sauce do you want? Please choose from BBQ, Tomato, White"
 pizzaSauce = gets
-pizzaSauce = pizzaName.upcase.strip
+pizzaSauce = pizzaSauce.upcase.strip
 pizzaSauces = ["BBQ", "TOMATO", "WHITE"]
 while not pizzaSauces.include?(pizzaSauce) 
     puts "invalid pizza sauce, please enter a valid pizza sauce"
@@ -90,14 +90,19 @@ end
 case pizzaSauce
 when "BBQ"
     pizza.pizzaSauce = "BBQ"
-# Xinyi to complete the rest
+when "WHITE"
+    pizza.pizzaSauce = "WHITE"
+when "TOMATO"
+    pizza.pizzaSauce = "TOMATO"
+else
+    #Xinyi note: Error handling normally the program won't go here, but if it happen, error need to be handled
 
 end
 
 # Add pizza base screen
 puts "What pizza base do you want? Please choose from Deep Pan and Crust"
 pizzaBase = gets
-pizzaBase = pizzaName.upcase.strip
+pizzaBase = pizzaBase.upcase.strip
 pizzaBases = ["DEEP PAN", "CRUST"]
 while not pizzaBases.include?(pizzaBase) 
     puts "Invalid pizza base, please enter a valid pizza base"
@@ -112,7 +117,7 @@ when "CRUST"
     pizza.pizzaBase = "Crust"
 else
     puts "Invalid pizza base"
-    # Can use error handling here
+    # Xinyi note: Can use error handling here
 end
 
 # Input customer information screen
@@ -127,26 +132,28 @@ puts ""
 print "Pizza: "
 print pizza.name
 puts ""
-if isToppings
+if isToppings == "YES"
     puts "Your toppings are: "
     pizza.toppings.each do |topping|
         print "    "
         print topping.name
         print " | "
         print topping.amount
+        puts ""
     end
 end
 puts ""
+print "Pizza sauce is: "
+print pizza.pizzaSauce
+puts ""
+print "Pizza base is: "
+print pizza.pizzaBase
+puts ""
+pizza.calculateTotalPrice
 print "Total price: $"
-print pizza.totalPrice
+print pizza.calculateTotalPrice
+puts ""
 
-
-
-
-
-
-
-puts pizza.calculateTotalPrice
 
 
 
