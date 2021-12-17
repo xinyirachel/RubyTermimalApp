@@ -14,7 +14,10 @@ class Pizza
         totalPrice = @pizzaPrice
         toppingPrice = 0
         for topping in @toppings do
-            toppingPrice += topping.price
+            puts topping.name
+            puts topping.price
+            puts topping.amount
+            toppingPrice += topping.price * topping.amount
         end
         totalPrice = @pizzaPrice + toppingPrice
     end
@@ -22,7 +25,7 @@ class Pizza
     attr_accessor :toppings
     attr_accessor :pizzaBase
     attr_reader :name
-    attr_reader :basePrice
+    attr_reader :pizzaPrice
 
 end
 

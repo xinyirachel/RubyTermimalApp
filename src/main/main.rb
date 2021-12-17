@@ -65,19 +65,19 @@ def addToppings (toppingsHashForThisMethod, pizzaForThisMethod)
             toppingQuantity = gets
         end
         # Instantiate Topping class and initialize topping properties
-        topping = Topping.new(toppingNameKey, toppingPropertyValue["price"], toppingQuantity)
+        topping = Topping.new(toppingNameKey, toppingPropertyValue["price"], toppingQuantity.to_i)
         toppings << topping     
     end
     puts "toppings array in addToppings method"
     puts toppings
-    
+
     pizzaForThisMethod.toppings = toppings
 end
 
 
 if isToppings == "YES"  
     addToppings(toppingsHash, pizza)
-    puts pizza.toppings
+    puts pizza.calculateTotalPrice
 else
     puts "???"
 end
