@@ -11,7 +11,6 @@ class Pizza
     end
 
     def calculateTotalPrice
-        totalPrice = @pizzaPrice
         toppingPrice = 0
         for topping in @toppings do
             toppingPrice += topping.price * topping.amount
