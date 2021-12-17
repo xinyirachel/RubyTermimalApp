@@ -1,9 +1,10 @@
 class Pizza
     @name #name for the type of the pizza you choosed
-    @toppings
+    @toppings = []
     @pizzaPrice #price for the pizza you ordered
-    @pizzaBase
-    @totalPrice
+    @pizzaSauce = "Tomato"
+    @pizzaBase = "Crust"
+    @totalPrice = 0
 
     def initialize (name,pizzaPrice)
         @name = name
@@ -14,15 +15,14 @@ class Pizza
         totalPrice = @pizzaPrice
         toppingPrice = 0
         for topping in @toppings do
-            puts topping.name
-            puts topping.price
-            puts topping.amount
             toppingPrice += topping.price * topping.amount
         end
         totalPrice = @pizzaPrice + toppingPrice
+        return totalPrice
     end
 
     attr_accessor :toppings
+    attr_accessor :pizzaSauce
     attr_accessor :pizzaBase
     attr_reader :name
     attr_reader :pizzaPrice
