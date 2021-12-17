@@ -1,0 +1,23 @@
+{
+    "Ham":
+      {
+        "price": 1
+      },
+    "Pinapple":
+      {
+        "price": 2
+      },
+    "Cheese":
+      {
+        "price": 3
+      },
+    "Mushroom":
+      {
+        "price": 4
+      },
+    "Olive":
+      {
+        "price": 5
+      }
+    
+  }
