@@ -26,6 +26,7 @@ User find out how to interact with each feature by read displayed instructons. T
 
 ## Control flow
 ![alt_text](https://github.com/xinyirachel/RubyTermimalApp/blob/main/docs/flow.png)
+
 ## Trello board
 ![alt_text](https://github.com/xinyirachel/RubyTermimalApp/blob/main/docs/trello.png)
 ## Help document

@@ -10,7 +10,7 @@ class Pizza
         @pizza_price = pizza_price
     end
 
-    def calculate_total_price
+    def c 
         topping_price = 0
         for topping in @toppings do
             topping_price += topping.price * topping.amount
