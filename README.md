@@ -25,9 +25,9 @@ Display order screen will show your choices before. This is a sum up of everythi
 User find out how to interact with each feature by read displayed instructons. There message list the options they can enter. If what they entered is not valid, they have to enter again. If the the app cannot find json file, a rescue information show up saying "File not found." 
 
 ## Control flow
-
+![alt_text](https://github.com/xinyirachel/RubyTermimalApp/blob/main/docs/flow.png)
 ## Trello board
-
+![alt_text](https://github.com/xinyirachel/RubyTermimalApp/blob/main/docs/trello.png)
 ## Help document
 ### Steps to install the application 
 - Install Ruby on your computer
