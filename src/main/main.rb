@@ -135,7 +135,7 @@ begin
         pizza.toppings.each do |topping|
             print "    "
             print topping.name
-            print " | "
+            print " --- "
             print topping.amount
             puts ""
         end
