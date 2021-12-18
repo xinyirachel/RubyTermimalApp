@@ -1,0 +1,39 @@
+Name: Pizza menu screen
+
+
+Description: User is prompt to enter a pizza type (case insensitive) until a valid pizza type input been entered, valid types are "HAWAIIAN", "MEAT", "VEGIE", "SEAFOOD".
+
+Steps:
+  1. Run main.rb
+  2. Hit enter to continue
+  3. Insert a random input, like "asfasfazf" 
+  4. Insert "Hawaiian"
+  5. Teminate program using SHIFT + C
+  6. Repeat step 1 t0 5 for other pizza options ("Meat", "Vegie", "Seafood")
+
+Expected behaviour:
+  1. The program opened(Run main.rb)
+  2. Pizza menu screen with text "What pizza do you want? Please choose from Hawaiian, Meat, Vegie, Seafood" displayed (Hit enter to continue)
+  3. Message "Invalid pizza name. Please enter a valid pizza name" is displayed (Insert a random input, like "asfasfazf" )
+  4. Toppings menu screen with text "Do you want toppings? Please enter "Yes" or "No"" displayed (Insert a valid input, like "MEAT")
+  5. Program closed
+  6. Same as step 1 to step 5
+
+Actual behavior:
+  1. The program opened(Run main.rb)
+  2. Pizza menu screen with text "What pizza do you want? Please choose from Hawaiian, Meat, Vegie, Seafood" displayed (Hit enter to continue)
+  3. Message "Invalid pizza name. Please enter a valid pizza name" is displayed (Insert a random input, like "asfasfazf" )
+  4. Toppings menu screen with text "Do you want toppings? Please enter "Yes" or "No"" displayed (Insert a valid input, like "MEAT")
+  5. Program closed
+  6. Same as step 1 to step 5
+
+Result:
+  1. Pass
+  2. Pass
+  3. Pass
+  4. Pass
+  5. Pass
+  6: Pass
+
+Conclusion:
+  Test passed

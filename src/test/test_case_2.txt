@@ -1,0 +1,31 @@
+Name: Toppings menu screen 
+
+
+Description: User is prompt to enter quantity for each topping until a valid integer input been entered, valid integer range is from 0 to 3
+
+Steps:
+  1. Run main.rb, hit continue, insert "Meat" to pass this step, insert "Yes"
+  2. Insert a random string input, like "asdasd"
+  3. Insert -1
+  4. Insert 4
+  5. Insert 0
+  6. Insert 3
+
+Expected behaviour:
+  1. Toppings menu screen with text "Do you want to add Ham?" displayed 
+  2. Message "Invalid input. Please enter a number from 0 to 3" is displayed
+  3. Message "Invalid input. Please enter a number from 0 to 3" is displayed
+  4. Message "Invalid input. Please enter a number from 0 to 3" is displayed
+  5. Toppings menu screen with text "Do you want to add pineapple ?" displayed
+  6. Toppings menu screen with text "Do you want to add cheese ?" displayed
+
+Actual behaviour:
+  Behave as expected.
+
+Result:
+  All pass
+
+Conclusion: 
+  Test passes
+
+

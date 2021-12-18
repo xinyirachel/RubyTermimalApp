@@ -13,7 +13,7 @@ begin
     STDIN.getch                                                                                                              
     puts ""
 
-    # Menu screen
+    # Pizza menu screen
     puts "What pizza do you want? Please choose from Hawaiian, Meat, Vegie, Seafood".on_blue
     pizza_name = gets
     pizza_name = pizza_name.upcase.strip #change the the input to uppercase and delete any space
@@ -39,7 +39,7 @@ begin
         puts "An error happened. The pizza name is invalid." 
     end
 
-    # Add toppings screen
+    # Toppings menu screen
     puts "Do you want toppings? Please enter \"Yes\" or \"No\"".on_blue
     is_toppings = gets 
     is_toppings = is_toppings.upcase.strip
