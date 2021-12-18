@@ -2,10 +2,12 @@ require_relative "./classes/Pizza"
 require_relative "./classes/Topping"
 require "json"
 require 'io/console' 
-
-toppingsFile = File.read("./data/toppings.json")
-toppingsHash = JSON.parse(toppingsFile)
-
+begin
+    toppingsFile = File.read("./data/toppings.json")
+    toppingsHash = JSON.parse(toppingsFile)
+rescue Errno::ENOENT
+    puts "File not found."
+end
 puts toppingsHash
 
 # Welcome screen
@@ -36,9 +38,8 @@ when "VEGIE"
 when "SEAFOOD"
     pizza = Pizza.new("Seafood", 20)
 else
-    puts "invalid pizza name." # not gonna be use,  just default 
-
-    # Xinyi note: place you can do error handling
+    
+    puts "An error happened. The pizza name is invalid." 
 end
 
 # Add toppings screen
