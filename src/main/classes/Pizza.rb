@@ -1,29 +1,29 @@
 class Pizza
     @name #name for the type of the pizza you choosed
     @toppings = []
-    @pizzaPrice #price for the pizza you ordered
-    @pizzaSauce = "Tomato"
-    @pizzaBase = "Crust"
+    @pizza_price #price for the pizza you ordered
+    @pizza_sauce = "Tomato"
+    @pizza_base = "Crust"
 
-    def initialize (name,pizzaPrice)
+    def initialize (name,pizza_price)
         @name = name
-        @pizzaPrice = pizzaPrice
+        @pizza_price = pizza_price
     end
 
-    def calculateTotalPrice
-        toppingPrice = 0
+    def calculate_total_price
+        topping_price = 0
         for topping in @toppings do
-            toppingPrice += topping.price * topping.amount
+            topping_price += topping.price * topping.amount
         end
-        totalPrice = @pizzaPrice + toppingPrice
-        return totalPrice
+        total_price = @pizza_price + topping_price
+        return total_price
     end
 
     attr_accessor :toppings
-    attr_accessor :pizzaSauce
-    attr_accessor :pizzaBase
+    attr_accessor :pizza_sauce
+    attr_accessor :pizza_base
     attr_reader :name
-    attr_reader :pizzaPrice
+    attr_reader :pizza_price
 end
 
 
