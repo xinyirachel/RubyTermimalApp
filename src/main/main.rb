@@ -148,7 +148,7 @@ begin
     print pizza.pizza_base
     puts ""
     
-    print "Total price: $".green
+    print "Total price:".green + "$"
     print pizza.calculate_total_price
     puts ""
 
